@@ -8,6 +8,7 @@ node_modules
 07ApiCrudMysql/node_modules
 08ApiRestMysql/node_modules
 09ApiRestMongoDB/node_modules
+10ApiRestMongoDBAuth/node_modules
 
 Practicas/00CrudNode/node_modules
 Practicas/01CrudHospitalNode/node_modules
