@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    article.wrapper
+      form.form(method="post" action="/add-paciente")
+        div
+          input(type="text" name="nombre_paciente" placeholder="Nombre del paciente", required)
+        div
+          input(type="text" name="apellido_paciente" placeholder="Apellido del paciente", required)
+        div
+          input(type="text" name="edad_paciente" placeholder="Edad del Paciente", required)
+        div
+          input.add(type="submit", value="Agregar paciente")
+
+    a(href="/") Inicio

@@ -1,0 +1,15 @@
+{
+  "name": "aprendiendo-npm",
+  "version": "1.0.0",
+  "description": "aprenderemos a trabajar con npm ",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node"
+  ],
+  "author": "Pedro Muño",
+  "license": "MIT"
+}

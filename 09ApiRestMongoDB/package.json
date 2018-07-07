@@ -1,0 +1,23 @@
+{
+  "name": "node-crud-mongodb",
+  "version": "3.0.0",
+  "description": "Proyecto Aplicación Rest MVC con Nodejs, Express y MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "supervisor server.js"
+  },
+  "author": "Pedro Muñoz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-method-override": "0.0.3",
+    "mongoose": "^5.2.1",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

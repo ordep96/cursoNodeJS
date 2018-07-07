@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    article.wrapper
+      form.form(method="post" action="/add-doctor")
+        div
+          input(type="text" name="nombre_doctor" placeholder="Nombre del Doctor", required)
+        div
+          input(type="text" name="apellido_doctor" placeholder="Apellido del Doctor", required)
+        div
+          input(type="text" name="especialidad" placeholder="Especialidad del Doctor", required)
+        div
+          input.add(type="submit", value="Agregar Doctor")
+
+    a(href="/") Inicio

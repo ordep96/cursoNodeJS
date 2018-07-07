@@ -1,0 +1,36 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    article.item
+      div
+        if(data.length)
+          table.table
+            tr
+              th Nombre Doctor
+              th Apellido Doctor
+              th Especialidad Doctor
+              th Nombre del Paciente
+              th Apellido del Paciente
+              th Precio de la cita
+              th Tipo de cita
+              th
+              th
+            each cita in data
+              tr
+                td #{cita.nombre_doctor}
+                td #{cita.apellido_doctor}
+                td #{cita.especialidad}
+                td #{cita.nombre_paciente}
+                td #{cita.apellido_paciente}
+                td $ #{cita.precio}
+                td #{cita.tipo}
+                td
+                td
+                  a.button.edit(href="/editar/"+cita.id) Editar
+                td
+                  form(method="post" action="/eliminar/"+cita.id)
+                    input.button.delete(type="button" value="Eliminar" onclick="eliminar(this)")
+        else
+          div.error No tienes contacto que mostrar

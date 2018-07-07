@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    img(src="indentation-war.png")
+    article.item
+      div
+        a.button.add(href="/agregar") Agregar
+        if(data.length)
+          table.table
+            tr
+              th Nombre
+              th Apellido
+              th Edad
+              th País
+              th
+              th
+            each contacto in data
+              tr
+                td #{contacto.nombre}
+                td #{contacto.apellido}
+                td #{contacto.edad}
+                td #{contacto.pais}
+                td
+                  a.button.edit(href="/editar/"+contacto.id) Editar
+                td
+                  form(method="post" action="/eliminar/"+contacto.id)
+                    input.button.delete(type="submit" value="Eliminar")
+        else
+          div.error No tienes contacto que mostrar

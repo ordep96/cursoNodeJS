@@ -1,0 +1,22 @@
+{
+  "name": "node-crud-mysql",
+  "version": "1.0.0",
+  "description": "Proyecto CRUD con nodejs, Express y Mysql",
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor app.js"
+  },
+  "author": "Pedro Muñoz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

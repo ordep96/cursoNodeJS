@@ -1,0 +1,17 @@
+{
+  "name": "contador-socket-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"supervisor index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}

@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    article.wrapper
+      form.form(method="post" action="/add-cita")
+        div
+          input(type="text" name="precio" placeholder="Precio de Consulta", required)
+        div
+          input(type="text" name="tipo_consulta" placeholder="Tipo de Consulta", required)
+        div
+          label(for="") Paciente
+          if(pacientes.length)
+            select(name="paciente")
+              each paciente in pacientes
+                option(value=`${paciente.idPaciente}`)= paciente.nombre_paciente
+        div
+          label(for="") Doctor
+          if(doctors.length)
+            select(name="doctor")
+              each doctor in doctors
+                option(value=`${doctor.idDoctor}`)= doctor.nombre_doctor
+        div
+          input.add(type="submit", value="Agregar Doctor")
+
+    a(href="/") Inicio

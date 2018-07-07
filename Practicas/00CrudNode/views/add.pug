@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+  section.container
+    h1.header= title
+    article.item
+      form.form(method="post" action="/")
+        fieldset
+          div
+            input(type="text" name="nombre" placeholder="Nombre", required)
+          div
+            input(type="text" name="apellido" placeholder="Apellido", required)
+          div
+            input(type="text" name="edad" placeholder="Edad", required)
+          div
+            input(type="text" name="pais", placeholder="País" required)
+          div
+            input.button.add(type="submit", value="Agregar")
+    div.message
+    a.button.show(href="/") Inicio

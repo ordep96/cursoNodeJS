@@ -1,0 +1,105 @@
+*, *:after, *:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+:root{
+	--color:#2c3e50;
+}
+
+body{font-family:'Helvetica';}
+
+a { text-decoration: none; }
+
+
+
+img {
+	display: block;
+	margin: 1rem auto;
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="submit"] { cursor: pointer; }
+
+.container{
+	width:90%;
+	margin:auto;
+}
+
+
+.table{
+	width:100%;
+	border-collapse:collapse;
+	background:#ccc;
+	text-align: left;
+}
+
+
+.table td, .table th { padding: 1rem; }
+
+.table tr:first-child {
+	background-color: #292623;
+	color: #EEE;
+}
+
+.table tr:nth-child(even) { background-color: #DDD; }
+
+.table tr:nth-child(odd):not(:first-child) { background-color: #EEE; }
+
+.header{
+	background:var(--color);
+	color:#fff;
+	margin-top:20px;
+	text-align:center;
+	padding:10px;
+}
+
+header {
+	color: #EEE;
+	background-color:var(--color);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:12px;
+}
+
+.menu{
+	list-style:none;
+	display:flex;
+}
+
+.menu li a{
+	color:#eee;
+	display:block;
+	padding:12px;
+}
+
+.wrapper{
+	background:#ccc;
+	padding:20px;
+}
+
+.form{
+	width:70%;
+	margin:auto;
+}
+
+.form div{
+	width:100%;
+}
+
+.form div input,
+.form div select{
+	width:100%;
+	padding:10px;
+	margin-top:10px;
+}
+
+.form div input.add{
+	background:var(--color);
+	color:#fff;
+	font-size:18px;
+}
